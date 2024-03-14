@@ -1,0 +1,70 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex; /* flexbox is responsive and will center even when the viewport changes */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #d62313, #3b18eb); 
+    background-attachment: fixed;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff8e;
+}
+
+button{
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.number{
+    background: #ddddddbc;
+}
+
+.operator{
+    background: rgb(255, 166, 0, 0.7);
+}
+
+.display{
+    grid-column: span 4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    background: #ffffffae;
+    word-wrap: wrap; /* allows long words to break and wrap onto the next line */
+    word-break: break-all; /* break at any character */
+}
+
+.row-1{
+    font-size: 25px;
+}
+
+.row-2{
+    font-size: 40px;
+}
+
+#equals{
+    grid-column: span 4;
+}
+
+button:hover{
+    transform: scale(1.02);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="row-1"></div>
+            <div class="row-2"></div>
+        </div>
+        <button class="number" onclick="displayNumber(this)">1</button>
+        <button class="number" onclick="displayNumber(this)">2</button>
+        <button class="number" onclick="displayNumber(this)">3</button>
+        <button class="operator" onclick="operation(this)">+</button>
+        <button class="number" onclick="displayNumber(this)">4</button>
+        <button class="number" onclick="displayNumber(this)">5</button>
+        <button class="number" onclick="displayNumber(this)">6</button>
+        <button class="operator" onclick="operation(this)">-</button>
+        <button class="number" onclick="displayNumber(this)">7</button>
+        <button class="number" onclick="displayNumber(this)">8</button>
+        <button class="number" onclick="displayNumber(this)">9</button>
+        <button class="operator" onclick="operation(this)">x</button>
+        <button class="number" onclick="displayNumber(this)">0</button>
+        <button class="number" onclick="displayNumber(this)">.</button>
+        <button class="operator" onclick="clearDisplay()">AC</button>
+        <button class="operator" onclick="operation(this)">/</button>
+        <button class="operator" id="equals" onclick="equals()">=</button>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
